@@ -1,10 +1,12 @@
 {
+    "plugins": ["cypress"],
     "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
         "plugin:import/recommended",
         "plugin:jsx-a11y/recommended",
         "plugin:@typescript-eslint/recommended",
+        "plugin:cypress/recommended",
         "eslint-config-prettier"
     ],
     "rules": {
@@ -19,7 +21,8 @@
                 "ts": "never",
                 "tsx": "never"
             }
-        ]
+        ],
+        "jest/expect-expect": "off"
     },
     "settings": {
         "react": {
